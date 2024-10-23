@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box; /* Include padding and border in total width and height */
+}
+
+html {
+    height: 100%; /* Full height for the HTML element */
+}
+
+body {
+    background-color: #8bbd78; /* Body background color */
+    color: #ffffff; /* Text color(SIGNUP & SELECT TYPE USER FONTSCOLOR) */
+    font: 300 1rem/1.5 'Helvetica Neue', sans-serif; /* Font settings */
+    margin: 0; /* Remove default margin */
+    min-height: 100%; /* Ensure minimum height */
+}
+
+.align {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.grid {
+    margin: 0 auto; /* Center the grid */
+    max-width: 30rem; /* Max width for the grid */
+    width: 100%; /* Full width */
+}
+
+h2 {
+    font-size: 2.75rem; /* Heading size */
+    font-weight: 100; /* Light font weight */
+    margin: 0 0 1rem; /* Margin below the heading */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.login {
+    background-color: #2c3e50; /* Background color for login section */
+    box-shadow: 0 0 250px #2980b9; /* Glow effect */
+    text-align: center; /* Center text */
+    padding: 1rem 2rem; /* Padding inside the login section */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.site__logo {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .site__logo:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+  }
+
+  
+.register {
+    background-color: #355E3B; /* Background color for register section */
+    box-shadow: 0 0 250px #d0ff00; /* Glow effect */
+    text-align: center; /* Center text */
+    padding: 3rem 2rem; /* Padding inside the register section */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.form__field {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center both label and select box */
+    margin-bottom: 1rem;
+}
+
+.form__field label {
+    margin-right: 1rem; /* Space between label and dropdown */
+    text-align: right;
+}
+
+.form__field select {
+    width: 33%; /* Adjust width if needed */
+    padding: 7px;
+    border: 1px solid #00ff1e;
+    border-radius: 999px;
+    background-color: #355E3B;
+    color: #ffffff;
+    padding-left: 1.5rem;
+}
+  
+input {
+    border: 0; /* Remove border */
+    font: inherit; /* Inherit font settings */
+    outline: 0; /* Remove outline */
+    padding: 0.5rem 1rem; /* Padding for inputs */
+    width: 100%; /* Full width */
+}
+
+input::placeholder {
+    color: gray; /* Placeholder text color(FONT COLOR NG  */
+}
+
+.form__field {
+    position: relative; /* Position relative for icon alignment */
+    margin-bottom: 1rem; /* Space between form fields */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #00ff1e; /* Border color */
+    border-radius: 999px; /* Fully rounded corners */
+    background-color: transparent; /* Transparent background */
+    text-align: left; /* Align text to the left */
+    color: #ffffff; /* Text color */
+    padding-left: 3rem; /* Space for icons */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: yellowgreen; /* Change border color on focus */
+    outline: none; /* Remove outline on focus */
+}
+
+.form__field label {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+  }
+  
+  .form-icon {
+    margin-right: 8px; /* Space between icon and label */
+  }
+  
+  
+.form-icon {
+    position: absolute; /* Position absolute for icon alignment */
+    left: 1rem; /* Align icon to the left */
+    top: 50%; /* Center icon vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    color: yellow; /* Icon color */
+}
+
+input[type="email"] {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#242c37"><path d="M256.017 273.436l-205.17-170.029h410.904l-205.734 170.029zm-.034 55.462l-205.983-170.654v250.349h412v-249.94l-206.017 170.245z"/></svg>');
+    background-repeat: no-repeat; /* No repeat for the background image */
+    background-size: 1.5rem; /* Size of the background image */
+    background-position: 1rem 50%; /* Position of the background image */
+}
+
+input[type="password"] {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#242c37"><path d="M195.334 223.333h-50v-62.666c0-61.022 49.645-110.667 110.666-110.667 61.022 0 110.667 49.645 110.667 110.667v62.666h-50v-62.666c0-33.452-27.215-60.667-60.667-60.667-33.451 0-60.666 27.215-60.666 60.667v62.666zm208.666 30v208.667h-296v-208.667h296zm-121 87.667c0-14.912-12.088-27-27-27s-27 12.088-27 27c0 7.811 3.317 14.844 8.619 19.773 4.385 4.075 6.881 9.8 6.881 15.785v22.942h23v-22.941c0-5.989 2.494-11.708 6.881-15.785 5.302-4.93 8.619-11.963 8.619-19.774z"/></svg>');
+    background-repeat: no-repeat; /* No repeat for the background image */
+    background-size: 1.5rem; /* Size of the background image */
+    background-position: 1rem 50%; /* Position of the background image */
+}
+
+input[type="submit"] {
+    background-image: linear-gradient(160deg, #8ceabb 0%, #378f7b 100%); /* Gradient background */
+    color: #fff; /* Button text color */
+    margin-bottom: 6rem; /* Space below the button */
+    border: none; /* No border */
+    border-radius: 999px; /* Fully rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(160deg, #378f7b 0%, #8ceabb 100%); /* Reverse gradient on hover */
+}
+/* Don't have an account?/Already have an account? */
+.text-link {
+    color: #ffffff; /* Change this to your desired color for "Sign Up" and "Log In" text */
+}
+
+.link {
+    color: #00ff1e; /* This is for links like "Sign Up" and "Log In" */
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #ffcc00; /* Change to a different color on hover */
+}
+/* Sign Up/Log In */
+a {
+    color: #00ff1e; /* Change to your preferred color */
+    text-decoration: underline; /* Underline the link */
+}
+
+a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
